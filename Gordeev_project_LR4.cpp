@@ -34,7 +34,14 @@ void enterSide1() {
 }
 
 void enterSide2() {
-
+cout << "Введите положительное число B: ";
+cin >> side2;
+cout << endl;
+if (side2 <= 0) {
+    cout << "Введите положительное число." << endl;
+    return enterSide2();
+}
+cout << "Введеное число B: " << side2 << endl;
 }
 
 void calcS() {
