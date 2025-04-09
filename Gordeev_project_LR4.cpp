@@ -30,7 +30,14 @@ void enterNumber(int& varLink, string label) {
 }
 
 void enterSide1() {
-
+cout << "Введите положительное число A: ";
+cin >> side1;
+cout << endl;
+if (side1 <= 0) {
+    cout << "Введите положительное число." << endl;
+    return enterSide1();
+}
+cout << "Введеное число A: " << side1 << endl;
 }
 
 void enterSide2() {
