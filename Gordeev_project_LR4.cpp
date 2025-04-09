@@ -38,7 +38,13 @@ void enterSide2() {
 }
 
 void calcS() {
-
+double S;
+ if (side1 <= 0 || side2 <= 0) {
+        cout << "Ошибка: сначала введите A и B!" << endl;
+        return calcS();
+}
+S = (side1 * side2);
+cout << "Площадь прямоугольника равна: " << S << endl;
 }
 
 void calcP() {
